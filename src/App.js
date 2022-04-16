@@ -1,10 +1,9 @@
-import logo from "./logo.svg";
-import "./App.css";
+import UseRefExample1 from "./components/UseRefExample1";
 
 function App() {
   return (
-    <div className="App">
-      <h1>hello world</h1>
+    <div className="container mb-5">
+      <UseRefExample1 />
     </div>
   );
 }
