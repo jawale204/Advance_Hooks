@@ -6,7 +6,8 @@ function useFetch(url, optios) {
 
   useEffect(() => {
     const fetchData = async () => {
-      setIsLoading(true);
+      //setIsLoading(true);
+      console.log("called");
       const response = await fetch(url, optios);
       const data = await response.json();
       setData(data);
@@ -15,6 +16,9 @@ function useFetch(url, optios) {
 
     fetchData();
   }, []);
+
+  console.log("rendered", isLoading);
+
   return { data, isLoading };
 }
 
