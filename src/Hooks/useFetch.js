@@ -15,6 +15,8 @@ function useFetch(url, optios) {
     };
 
     fetchData();
+
+    //return console.log("unmounted");
   }, []);
 
   console.log("rendered", isLoading);
