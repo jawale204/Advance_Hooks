@@ -47,3 +47,7 @@ function UseRefExample1() {
 }
 
 export default UseRefExample1;
+
+//notes : useFetch is called which returns null data and isloadind true then useEffect is called inside useFetch which
+//sets the data and isloading to false hence state changes and it returns data,isloading to customhook
+// hence we get 2 responses from useFetch 1st at normal return and then useEffect is called which sets data and then return

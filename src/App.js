@@ -1,9 +1,12 @@
-import CustomHookExample2 from "./components/CustomHookExample2";
+import UseReducerExample from "./components/useReducerExample";
+import { ExampleProvider } from "./Context/exampleContext";
 
 function App() {
   return (
     <div className="container mb-5">
-      <CustomHookExample2 />
+      <ExampleProvider>
+        <UseReducerExample />
+      </ExampleProvider>
     </div>
   );
 }

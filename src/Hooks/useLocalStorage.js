@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 function useLocalStorage(key, initialValue) {
   const getLocalStorageValue = (key, initialValue) => {
